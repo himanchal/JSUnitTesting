@@ -1,0 +1,15 @@
+<!doctype html>
+<html ng-app="calculatorApp">
+    <head >
+        <title>Angular JS Unit testing Demo!</title>
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="js/app.js"></script>
+    </head>
+    <body ng-controller="CalculatorController">
+            <input ng-model="x" type="number">
+            <input ng-model="y" type="number">
+            <strong>{{z}}</strong>
+            <!-- the value for ngClick maps to the sum function within the controller body -->
+            <input type="button" ng-click="sum()" value="+">
+    </body>
+</html>
